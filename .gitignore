@@ -51,3 +51,8 @@ desktop.ini
 # Test media
 *.mp4
 *.avi
+# Unwanted YOLO base weights
+yolo11n.pt
+
+# Receipt PDFs
+receipts/
