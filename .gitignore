@@ -1,0 +1,53 @@
+# Virtual Environment
+yolov8-env/
+venv/
+env/
+.venv/
+ENV/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# PyInstaller output
+dist/
+build/
+*.spec
+
+# YOLO base weights only (best.pt and best2.pt will still upload)
+yolov8n.pt
+yolov8s.pt
+yolov8m.pt
+yolov8l.pt
+yolov8x.pt
+
+# Ignore all of runs/ EXCEPT veg_yolov8_final
+runs/
+!runs/
+!runs/detect/
+!runs/detect/veg_yolov8_final/
+!runs/detect/veg_yolov8_final/**
+
+# Roboflow dataset
+Vegetables-(Main)-1/
+
+# Database
+*.db
+
+# Logs
+*.log
+logs/
+
+# Environment variables
+.env
+
+# OS junk
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Test media
+*.mp4
+*.avi
