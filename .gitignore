@@ -56,3 +56,5 @@ yolo11n.pt
 
 # Receipt PDFs
 receipts/
+# Sales data
+sales_data/
