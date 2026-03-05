@@ -1,0 +1,10 @@
+{
+    "serial_port": "COM5",
+    "baudrate": 9600,
+    "camera_id": 1,
+    "model_path": "e:\\Project\\Final\\Portable_build\\best2.pt",
+    "min_valid_weight": 0.002,
+    "max_detection_frames": 10,
+    "min_votes_to_lock": 3,
+    "save_confirmation_ms": 2000
+}

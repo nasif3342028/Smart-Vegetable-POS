@@ -16,11 +16,10 @@ from config import Config
 
 PRICE_PER_KG = {
     "potato": 40.0,
-    "tomato": 60.0,
-    "onion": 50.0,
-    "radish": 30.0,
-    "chili": 120.0,
-    "cucumber": 45.0
+    "tomato": 70.0,
+    "onion": 65.0,
+    "chili": 160.0,
+    "cucumber": 130.0
 }
 
 
@@ -796,13 +795,16 @@ class SmartScaleApp:
 
     def handle_locked(self, frame):
         if self.current_weight > 0:
-            self.last_stable_weight = self.current_weight
+            # FIXED: Only update stable weight if weight is STABLE or INCREASING
+            if self.current_weight >= self.last_stable_weight * 0.95:
+                self.last_stable_weight = self.current_weight
+
             unit_price = self.current_prices.get(self.locked_vegetable, 0.0)
             total_price = self.last_stable_weight * unit_price
 
             self.lbl_status.config(text="LOCKED: " + self.locked_vegetable.upper(), fg="#00ff00")
             self.lbl_item.config(text=self.locked_vegetable.upper(), fg="#00ffcc")
-            self.lbl_weight.config(text=f"{int(self.current_weight * 1000)}")
+            self.lbl_weight.config(text=f"{int(self.last_stable_weight * 1000)}")
             self.lbl_price.config(text=f"{unit_price:.2f} BDT")
             self.lbl_total.config(text=f"{total_price:.2f} BDT", fg="#00ff00")
         else:
