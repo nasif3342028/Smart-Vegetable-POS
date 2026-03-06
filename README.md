@@ -4,7 +4,7 @@ An AI-powered Point of Sale (POS) system that automatically **detects vegetables
 
 ---
 
-## 📁 Repository Structure
+##  Repository Structure
 
 ```
 Smart-Vegetable-POS/
@@ -43,7 +43,7 @@ Smart-Vegetable-POS/
 
 ---
 
-## 🧩 Module Descriptions
+##  Module Descriptions
 
 ### Software_part (Development Version)
 
@@ -65,7 +65,7 @@ Smart-Vegetable-POS/
 
 ---
 
-## 🚀 Getting Started — Software_part (Development Version)
+##  Getting Started — Software_part (Development Version)
 
 ### Prerequisites
 
@@ -156,7 +156,7 @@ python camera_ui.py
 
 ---
 
-## 🔄 Application Workflow
+##  Application Workflow
 
 ### State Machine
 
@@ -219,7 +219,7 @@ Start Application
 
 ---
 
-## 📦 Building the Portable EXE
+##  Building the Portable EXE
 
 ### Step 1: Navigate to Portable_build
 
@@ -296,7 +296,7 @@ VegetablePOS/
 
 ---
 
-## 🖥️ GUI Screens
+##  GUI Screens
 
 ### 1. Settings Screen (Portable Version Only)
 
@@ -323,7 +323,7 @@ Appears on first launch. Configure:
 
 ---
 
-## 🗄️ Database Schema
+##  Database Schema
 
 **SQLite** — File: `vegetable_pos.db`
 
@@ -352,7 +352,7 @@ CREATE TABLE transactions (
 
 ---
 
-## 📊 Output Files
+##  Output Files
 
 | Output | Format | Location | Description |
 |--------|--------|----------|-------------|
@@ -363,7 +363,7 @@ CREATE TABLE transactions (
 
 ---
 
-## ⚙️ Configuration Reference
+##  Configuration Reference
 
 ### Software_part — Hardcoded in `camera_ui.py`
 
@@ -384,7 +384,7 @@ Same parameters but user-configurable via the Settings screen GUI. Saved/loaded 
 
 ---
 
-## 🔌 Hardware Requirements
+##  Hardware Requirements
 
 | Component | Purpose |
 |-----------|---------|
@@ -398,7 +398,7 @@ Same parameters but user-configurable via the Settings screen GUI. Saved/loaded 
 
 ---
 
-## 🐛 Troubleshooting
+##  Troubleshooting
 
 | Problem | Solution |
 |---------|----------|
@@ -411,7 +411,7 @@ Same parameters but user-configurable via the Settings screen GUI. Saved/loaded 
 
 ---
 
-## 🤝 Team Members
+##  Team Members
 
 - **Sami Akhtar Meer (22002117):** Hardware Implementation and 3D structure design in TINKERCAD, Physical enclosure prototyping and mechanical assembly, Component procurement, testing, and quality assurance, Hardware troubleshooting and calibration optimization.
 - **Mehrab Jayen (220021215):** Dataset management, data annotation, and data augmentation, Image collection from multiple sources and lighting conditions, Roboflow-based annotation workflow and quality control, Data augmentation techniques (rotation, scaling, brightness adjustment), Dataset versioning and split management (train/validation/test).
@@ -421,6 +421,6 @@ Same parameters but user-configurable via the Settings screen GUI. Saved/loaded 
 
 ---
 
-## 📜 License
+##  License
 
 This project was developed as a university final year project.
